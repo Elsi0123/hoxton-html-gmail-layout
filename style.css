@@ -1,0 +1,62 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+height: 100vh;
+display: grid ;
+grid-template:
+'header header header header ' auto
+ 'left-menu emails settings shortcout ' 1fr/
+ 180px 1fr 180px auto;
+
+
+
+}
+
+
+
+
+
+
+.header {
+    margin: 8px;
+ grid-area: header ;
+background-color: bisque
+;
+
+}
+
+.left-menu {
+grid-area: left-menu;
+    background-color: #00ff0040;
+}
+
+.emails {
+grid-area: emails;
+    background-color: #00ffff40;
+}
+
+.settings {
+grid-area: settings;
+    background-color: #ffff0040;
+}
+
+.shortcout {
+grid-area: shortcout;
+    background-color: #ff4000;
+}
+
+
+@media  screen and (max-width; 740px) {
+    body {
+        height: 100vh;
+        display: grid ;
+        grid-template:
+        'header header header header ' auto
+         'left-menu emails settings shortcout ' 1fr/
+         180px 1fr 180px auto;
+        
+    
+}
